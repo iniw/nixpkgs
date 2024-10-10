@@ -19,6 +19,7 @@
 , qt6Packages
 , woff2
 , ffmpeg
+, fontconfig
 , simdutf
 , skia
 , nixosTests
@@ -127,6 +128,7 @@ stdenv.mkDerivation (finalAttrs: {
     simdutf
     skia
     woff2
+    fontconfig
   ] ++ lib.optional stdenv.hostPlatform.isLinux [
     libpulseaudio.dev
     qtwayland
